@@ -1,4 +1,4 @@
-// RANDOM COLOR
+// RANDOM COLORS
 const colors = [
 	"red",
 	"blue",
@@ -13,14 +13,13 @@ const colors = [
 	"maroon",
 	"pink",
 ];
+// DECLARATIONS
 const btn = document.querySelector("button");
 const color = document.querySelector(".color");
 
-// CHANGE BACKGROUND COLOR
+// CHANGE BACKGROUND COLOR & ADD COLOR TO HEADER
 btn.addEventListener("click", function () {
 	const randomNumber = getRandomNumber();
-	console.log(randomNumber);
-
 	document.body.style.backgroundColor = colors[randomNumber];
 	color.textContent = colors[randomNumber];
 });
