@@ -1,11 +1,14 @@
 // RANDOM COLOR
 const colors = ["red", "blue", "orange", "yellow", "green", "purple"];
-const randomColor = colors[Math.floor(Math.random() * colors.length)];
-console.log(randomColor);
+const btn = document.querySelector("button");
+const color = document.querySelector("color");
 
 // CHANGE BACKGROUND COLOR
-const btn = document
-	.querySelector("button")
-	.addEventListener("click", function () {
-		document.body.style.backgroundColor = `${randomColor}`;
-	});
+btn.addEventListener("click", function () {
+	const randomNumber = getRandomNumber();
+	console.log(randomNumber);
+	document.body.style.backgroundColor = colors[randomNumber];
+});
+function getRandomNumber() {
+	return Math.floor(Math.random() * colors.length);
+}
