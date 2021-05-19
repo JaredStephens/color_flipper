@@ -1,5 +1,18 @@
 // RANDOM COLOR
-const colors = ["red", "blue", "orange", "yellow", "green", "purple"];
+const colors = [
+	"red",
+	"blue",
+	"orange",
+	"yellow",
+	"green",
+	"purple",
+	"lime",
+	"olive",
+	"teal",
+	"aqua",
+	"maroon",
+	"pink",
+];
 const btn = document.querySelector("button");
 const color = document.querySelector(".color");
 
